@@ -7,10 +7,10 @@ class Animal:
   def eat(self, food):
       if food.edible:
           print(f'{self.name} съел {food.name}')
-          fed = True
+          self.fed = True
       else:
           print(f'{self.name} не стал есть {food.name}')
-          alive = False
+          self.alive = False
           
 class Plant:
     def __init__(self, name):
